@@ -1,0 +1,29 @@
+id: custom_csv_import
+label: Import articles
+migration_group: default
+source:
+  plugin: 'csv'
+  path: 'public://import-sources/nodes.csv'
+  delimiter: ','
+  enclosure: '"'
+  header_offset: 0
+  ids:
+    - id
+  fields:
+    -
+      name: id
+      label: 'Unique Id'
+    -
+      name: title
+      label: 'Title'
+    -
+      name: body
+      label: 'Body'
+process:
+  title: title
+  body: body
+  type:
+    plugin: default_value
+    default_value: article
+destination:
+  plugin: entity:node
