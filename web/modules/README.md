@@ -3,7 +3,6 @@ DAY 5
 <br>
 
 <span style="color:#2b2d42;"> Work with Data Migration</span>
-![image](https://github.com/user-attachments/assets/b946aff9-f14a-471f-b58c-cfe69835f0d2)
 
 </h1>
 
